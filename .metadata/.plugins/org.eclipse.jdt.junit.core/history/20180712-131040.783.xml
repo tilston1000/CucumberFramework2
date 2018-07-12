@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LoginRunner" project="CucumberBDDProject" tests="9" started="9" failures="2" errors="2" ignored="1">
+  <testsuite name="runners.LoginRunner" time="13.469">
+    <testsuite name="Feature: The Login Page" time="13.469">
+      <testsuite name="Scenario Outline: the user should be able to login" time="6.973">
+        <testsuite name="Examples:" time="6.973">
+          <testsuite name="| tim@testemail.com | trpass |" time="1.914">
+            <testcase name="Given the user is on the login page" classname="| tim@testemail.com | trpass |" time="1.205"/>
+            <testcase name="When the user enters &quot;tim@testemail.com&quot; and &quot;trpass&quot;" classname="| tim@testemail.com | trpass |" time="0.046"/>
+            <testcase name="Then the user should be able to view account balance" classname="| tim@testemail.com | trpass |" time="0.663"/>
+          </testsuite>
+          <testsuite name="| lisa@testemai.com | lpass |" time="0.876" incomplete="true">
+            <failure>java.lang.AssertionError&#13;
+	at org.junit.Assert.fail(Assert.java:86)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:41)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:52)&#13;
+	at stepDefinitions.LoginSteps.user_should_see_account_balancre(LoginSteps.java:46)&#13;
+	at ✽.Then the user should be able to view account balance(login.feature:30)&#13;
+&#13;
+</failure>
+            <testcase name="Given the user is on the login page" classname="| lisa@testemai.com | lpass |" time="0.823"/>
+            <testcase name="When the user enters &quot;lisa@testemai.com&quot; and &quot;lpass&quot;" classname="| lisa@testemai.com | lpass |" time="0.051"/>
+            <testcase name="Then the user should be able to view account balance" classname="| lisa@testemai.com | lpass |" time="0.002">
+              <failure>java.lang.AssertionError&#13;
+	at org.junit.Assert.fail(Assert.java:86)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:41)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:52)&#13;
+	at stepDefinitions.LoginSteps.user_should_see_account_balancre(LoginSteps.java:46)&#13;
+	at ✽.Then the user should be able to view account balance(login.feature:30)&#13;
+&#13;
+</failure>
+            </testcase>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+      <testsuite name="Scenario: after a failed attempt, the user should be able to login again" time="0.002" incomplete="true">
+        <error>cucumber.runtime.CucumberException: Arity mismatch: Step Definition 'stepDefinitions.LoginSteps.user_enters_credentials(DataTable) in file:/C:/Users/andrew.tilston/Testing%20Info/Projects/Cucumber/CucumberBDDProject/bin/' with pattern [^the user enters set of "(.*)" and "(.*)"$] is declared with 1 parameters. However, the gherkin step has 3 arguments [&lt;username&gt;, &lt;password&gt;, Table:[[username, password], [lisa@testemai.com, lpass], [tim@testemail.com, trpass]]]. 
+Step: When the user enters set of "&lt;username&gt;" and "&lt;password&gt;"&#13;
+	at cucumber.runtime.StepDefinitionMatch.arityMismatch(StepDefinitionMatch.java:102)&#13;
+	at cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:60)&#13;
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)&#13;
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)&#13;
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#13;
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#13;
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#13;
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)&#13;
+&#13;
+</error>
+        <testcase name="Given the user is on the login page" classname="Scenario: after a failed attempt, the user should be able to login again" time="0.001"/>
+        <testcase name="When the user enters set of &quot;&lt;username&gt;&quot; and &quot;&lt;password&gt;&quot;" classname="Scenario: after a failed attempt, the user should be able to login again" time="0.001">
+          <error>cucumber.runtime.CucumberException: Arity mismatch: Step Definition 'stepDefinitions.LoginSteps.user_enters_credentials(DataTable) in file:/C:/Users/andrew.tilston/Testing%20Info/Projects/Cucumber/CucumberBDDProject/bin/' with pattern [^the user enters set of "(.*)" and "(.*)"$] is declared with 1 parameters. However, the gherkin step has 3 arguments [&lt;username&gt;, &lt;password&gt;, Table:[[username, password], [lisa@testemai.com, lpass], [tim@testemail.com, trpass]]]. 
+Step: When the user enters set of "&lt;username&gt;" and "&lt;password&gt;"&#13;
+	at cucumber.runtime.StepDefinitionMatch.arityMismatch(StepDefinitionMatch.java:102)&#13;
+	at cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:60)&#13;
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)&#13;
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)&#13;
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#13;
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#13;
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#13;
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="Then the user should be able to view account balance" classname="Scenario: after a failed attempt, the user should be able to login again" time="0.675" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

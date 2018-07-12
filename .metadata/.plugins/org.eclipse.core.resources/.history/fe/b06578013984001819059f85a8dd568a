@@ -1,0 +1,14 @@
+package stepDefinitions;
+
+public class LoginSteps {
+	
+	// Use cucumber to bind the Feature File steps to Java code
+	// Glue code - step definitions - step implementation
+	
+	//Given the user is on the login page
+	@Given
+	public void user_on_login_page()
+	{
+		
+	}
+}

@@ -1,0 +1,10 @@
+Feature: the customer should be able to view their account information
+
+Background:
+	Given the user opens a browser
+	Given the user navigates to the login page
+	Given the user enters valid credentials
+	
+Scenario: the user should be able to make a payment
+
+Scenario: the user should be able to change their password

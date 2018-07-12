@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LoginRunner" project="CucumberBDDProject" tests="3" started="3" failures="0" errors="2" ignored="2">
+  <testsuite name="runners.LoginRunner" time="0.015">
+    <testsuite name="Feature: The Login Page" time="0.015">
+      <testsuite name="Scenario: The user should be able to login with valid credentials" time="0.0" incomplete="true">
+        <error>java.lang.NullPointerException&#13;
+	at stepDefinitions.LoginSteps.user_on_login_page(LoginSteps.java:34)&#13;
+	at ✽.Given the user is on the login page(login.feature:7)&#13;
+&#13;
+</error>
+        <testcase name="Given the user is on the login page" classname="Scenario: The user should be able to login with valid credentials" time="0.0">
+          <error>java.lang.NullPointerException&#13;
+	at stepDefinitions.LoginSteps.user_on_login_page(LoginSteps.java:34)&#13;
+	at ✽.Given the user is on the login page(login.feature:7)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="When the user enters valid credentials" classname="Scenario: The user should be able to login with valid credentials" time="0.0" ignored="true"/>
+        <testcase name="Then the user should be able to view account balance" classname="Scenario: The user should be able to login with valid credentials" time="0.005" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

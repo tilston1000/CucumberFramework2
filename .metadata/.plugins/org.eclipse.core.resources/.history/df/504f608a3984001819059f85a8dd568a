@@ -1,0 +1,31 @@
+package stepDefinitions;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class LoginSteps {
+	
+	// Use cucumber to bind the Feature File steps to Java code
+	// Glue code - step definitions - step implementation
+	
+	@Given("the user is on the login page")
+	public void user_on_login_page()
+	{
+		
+	}
+	
+	
+	@When("the user enters valid credentials")
+	public void user_enters_valid_credentials()
+	{
+		
+	}
+	
+	
+	@Then("the user should be able to view account balance")
+	public void user_should_see_account_balancre() 
+	{
+		
+	}
+}

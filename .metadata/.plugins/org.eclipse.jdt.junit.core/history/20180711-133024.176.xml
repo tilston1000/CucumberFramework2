@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LoginRunner" project="CucumberBDDProject" tests="7" started="7" failures="0" errors="0" ignored="0">
+  <testsuite name="runners.LoginRunner" time="8.326">
+    <testsuite name="Feature: The Login Page" time="8.326">
+      <testsuite name="Scenario: The user should be able to login with valid credentials" time="2.129">
+        <testcase name="Given the user is on the login page" classname="Scenario: The user should be able to login with valid credentials" time="1.32"/>
+        <testcase name="When the user enters valid credentials" classname="Scenario: The user should be able to login with valid credentials" time="0.074"/>
+        <testcase name="Then the user should be able to view account balance" classname="Scenario: The user should be able to login with valid credentials" time="0.735"/>
+      </testsuite>
+      <testsuite name="Scenario: the user should not be able to login with bad credentials" time="1.655">
+        <testcase name="Given the user is on the login page" classname="Scenario: the user should not be able to login with bad credentials" time="0.914"/>
+        <testcase name="When the user enters bad credentials" classname="Scenario: the user should not be able to login with bad credentials" time="0.05"/>
+        <testcase name="Then the user should not be able to login" classname="Scenario: the user should not be able to login with bad credentials" time="0.031"/>
+        <testcase name="And the user should get an invalid login message" classname="Scenario: the user should not be able to login with bad credentials" time="0.659"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

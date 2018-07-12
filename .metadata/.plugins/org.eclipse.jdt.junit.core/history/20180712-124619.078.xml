@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LoginRunner" project="CucumberBDDProject" tests="5" started="5" failures="2" errors="0" ignored="0">
+  <testsuite name="runners.LoginRunner" time="1.293">
+    <testsuite name="Feature: The Login Page" time="1.293">
+      <testsuite name="Scenario: the user should be able to login" time="1.293" incomplete="true">
+        <failure>java.lang.AssertionError&#13;
+	at org.junit.Assert.fail(Assert.java:86)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:41)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:52)&#13;
+	at stepDefinitions.LoginSteps.user_should_see_account_balancre(LoginSteps.java:43)&#13;
+	at ✽.Then the user should be able to view account balance(login.feature:25)&#13;
+&#13;
+</failure>
+        <testcase name="Given the user is on the login page" classname="Scenario: the user should be able to login" time="0.116"/>
+        <testcase name="When user enters username as &quot;lisa@testemail.com&quot;" classname="Scenario: the user should be able to login" time="0.072"/>
+        <testcase name="And user enters password as &quot;trpass&quot;" classname="Scenario: the user should be able to login" time="1.05"/>
+        <testcase name="And user clicks on login" classname="Scenario: the user should be able to login" time="0.05"/>
+        <testcase name="Then the user should be able to view account balance" classname="Scenario: the user should be able to login" time="0.005">
+          <failure>java.lang.AssertionError&#13;
+	at org.junit.Assert.fail(Assert.java:86)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:41)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:52)&#13;
+	at stepDefinitions.LoginSteps.user_should_see_account_balancre(LoginSteps.java:43)&#13;
+	at ✽.Then the user should be able to view account balance(login.feature:25)&#13;
+&#13;
+</failure>
+        </testcase>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

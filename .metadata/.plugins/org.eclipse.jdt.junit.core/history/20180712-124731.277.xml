@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LoginRunner" project="CucumberBDDProject" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="runners.LoginRunner" time="2.031">
+    <testsuite name="Feature: The Login Page" time="2.031">
+      <testsuite name="Scenario: the user should be able to login" time="2.031">
+        <testcase name="Given the user is on the login page" classname="Scenario: the user should be able to login" time="0.108"/>
+        <testcase name="When user enters username as &quot;tim@testemail.com&quot;" classname="Scenario: the user should be able to login" time="0.067"/>
+        <testcase name="And user enters password as &quot;trpass&quot;" classname="Scenario: the user should be able to login" time="1.148"/>
+        <testcase name="And user clicks on login" classname="Scenario: the user should be able to login" time="0.048"/>
+        <testcase name="Then the user should be able to view account balance" classname="Scenario: the user should be able to login" time="0.659"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

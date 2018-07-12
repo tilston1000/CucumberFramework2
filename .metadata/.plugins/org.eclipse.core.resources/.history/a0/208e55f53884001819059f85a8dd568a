@@ -1,0 +1,8 @@
+package stepDefinitions;
+
+public class LoginSteps {
+	
+	// Use cucumber to bind the Feature File steps to Java code
+	// Glue code - step definitions - step implementation
+
+}
